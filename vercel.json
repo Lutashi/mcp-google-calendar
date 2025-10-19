@@ -6,7 +6,7 @@
     "api/**/*": { "runtime": "@vercel/node@5.4.0" }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "/api/index" }
+    { "src": "/api/(.*)", "dest": "/api/index" }
   ]
 }
 
