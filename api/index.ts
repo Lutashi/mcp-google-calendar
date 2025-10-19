@@ -1,4 +1,10 @@
 // Vercel will compile this file separately; import compiled app at runtime
-export { default } from '../dist/http_bridge.js';
+import serverless from 'serverless-http';
+import { createApp } from '../dist/http_bridge.js';
+
+const app = createApp();
+const handler = serverless(app);
+
+export default handler as any;
 
 

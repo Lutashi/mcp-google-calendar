@@ -1,0 +1,12 @@
+{
+  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm build",
+  "functions": {
+    "api/**/*": { "runtime": "nodejs20.x" }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/index" }
+  ]
+}
+
+
