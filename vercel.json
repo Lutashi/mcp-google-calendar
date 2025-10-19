@@ -2,7 +2,7 @@
   "installCommand": "pnpm install --frozen-lockfile",
   "buildCommand": "pnpm build",
   "functions": {
-    "api/**/*": { "runtime": "nodejs20.x" }
+    "api/**/*": { "runtime": "@vercel/node@5.4.0" }
   },
   "routes": [
     { "src": "/(.*)", "dest": "/api/index" }
